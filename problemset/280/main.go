@@ -6,9 +6,9 @@ func main() {
 	var a, b, c int
 	fmt.Scanf("%d %d %d", &a, &b, &c)
 
-	if (a + b + c == 180) && a != 0 && b != 0 && c != 0 {
-		fmt.Println("Yes")
+	if (a*a + b*b == c*c) || (b*b + c*c == a*a) || (a*a + c*c == b*b) {
+		fmt.Println("YES")
 	} else {
-		fmt.Println("No")
+		fmt.Println("NO")
 	}
 }
